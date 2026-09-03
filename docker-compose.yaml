@@ -7,7 +7,7 @@ services:
       dockerfile: dockerfiles/consumer.dockerfile
     env_file:
       - .env
-    depends:
+    depends_on:
       - timescaledb
 
   timescaledb:
